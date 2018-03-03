@@ -1,0 +1,27 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Assignment 3</title>
+    <script type="text/javascript" src="http://24.16.255.56:8888/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="./assetmanager.js"></script>
+    <script type="text/javascript" src="./gameengine.js"></script>
+    <script type="text/javascript" src="./circle.js"></script>
+    <script type="text/javascript" src="./square.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+</head>
+<body>
+    <div>Red and Green Squares are on team 1. Blue and Yellow Squares are on team 2</div>
+    <div>After every 2 seconds, each square will generate a circle with random radius</div>
+    <div>Two circles on different teams will be pulled towards and eliminate each other. The winner one get its radius reduced</div>
+    <div>Two circles on the same team but have different colors when have their sizes slightly increased when they collide</div>
+    <div>If a circle's size gets big, resize it to a smaller radius</div>
+    <div>However, if a circle's size gets  <strong>too big</strong>, remove it from world instead</div>
+
+    <canvas id="gameWorld" width="800" height="800" style="border: 1px solid white; background: black"></canvas>
+
+    <button id="save" >Save</button>
+    <button id="load" >Load</button>
+</body>
+</html>
